@@ -32,15 +32,14 @@ else {
 
 	$(window).load(function() {
 
-		$('html').css('background-color','lightgrey');
-		$('header').css('background-color','lightgrey');
-		$('footer').css('background-color','lightgrey');
-		$('main').css('background-color','lightgrey');
-		$('.container-fluid').css('background-color','lightgrey');
-		$('.item-image').css({"align-items":"center","display":"none"});
-
+		$('html,.container-fluid,header,footer,main').css('background-color','lightgrey');
+		$('a.item').click(function(e) {
+    		e.preventDefault();
+    		//do other stuff when a click happens
+		});
+		
 		$(document).ready(function () {
-    		$(".item").click(function () {
+    		$("a.item").click(function () {
         	$(this).next('div.item-image').slideToggle("slow");
     		});
 
