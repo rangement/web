@@ -161,34 +161,34 @@
 /* Mobile size: ___________________________________________*/
 
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
 
 
 	html a {
   	color: green;
 	font-family: Helvetica,sans-serif;
 	text-decoration: none;
-	font-size: calc(24px + 0.2vw);
+	font-size: calc(16pt + 0.2vw);
 	}
 
 	.itemDate {
 		display: block;
-		min-width: 5em;
+		min-width: 1em;
 		font-family: Times,sans-serif;
-		font-size: calc(27.5px + 0.2vw);
+		font-size: calc(19.5pt + 0.2vw);
 	}
 	
 	.item .itemTitle {
 		display: block;
 		min-width: 250px;
 		font-family: Times,sans-serif;
-		font-size: calc(27.5px + 0.2vw);
+		font-size: calc(19.5pt + 0.2vw);
 /*		float: right;
 		padding-left: 67vw;
 		right:0em;*/
 	}
 
-	.item-image {
+/*	.item-image {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -199,11 +199,11 @@
 		justify-content: center;
 		pointer-events: none;
 		z-index: 9999;
-	}
+	}*/
 
-	.item-image img{
+/*	.item-image img{
 		display: flex;
-	}
+	}*/
 
 }
 
