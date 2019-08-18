@@ -44,6 +44,19 @@ if (screen.width >= 450) {
 
 
 
+//close section-2 when scroll back to top:
+
+	window.onscroll = function(e) {	
+		var bod = document.body; 
+    	var doc = document.documentElement; 
+    	doc = (doc.clientHeight)? doc : bod;
+	
+		if (doc.scrollTop == 0){
+			if ($('#section-2').hasClass('active')){
+		 		$('#section-2').removeClass('active');
+			}  
+		};      
+	};
 
 
 // signals that this is script for Desktop media size
