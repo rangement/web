@@ -179,7 +179,7 @@
 					<div class="itemDate">/ April 2017</div>
 					<div class="itemTitle">/ Back/Forth Collaborative Publication</div>
 				</a>
-				<div class="item-image item-image24">
+				<div class="item-image item-image15">
 					<img src="assets/img/file-024.png">
 				</div>	
 
@@ -275,7 +275,7 @@
 
 	  <footer>
 	  	<div id="contact"><a>Contact </a></div>
-	  	<div><a id="para1"></a><a> / ...</a></div>
+	  	<div><a id="para1"></a></div>
 	  </footer>
 
 	</main>
@@ -286,14 +286,17 @@
 
   	function formatAMPM() {
     let d = new Date(),
-      minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-      hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-      ampm = d.getHours() >= 12 ? 'pm' : 'am',
+      // minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+      // hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+      // ampm = d.getHours() >= 12 ? 'pm' : 'am',
       months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
       days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
       at = "at";
-      return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+', '+hours+':'+minutes+ampm;
+      return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear();
   	}
+
+  	// +', '+hours+':'+minutes+ampm
+
 
 //opens up section-2 on item click:
 

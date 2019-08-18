@@ -23,6 +23,24 @@ if (screen.width >= 450) {
 	});
 
 
+// SLIDE TOGGLE
+
+$(".initial").click(function () {
+    var effect = 'slide';
+    var options = { direction: $('.more').val() };
+    var duration = 100;
+    $('.initial').hide();
+    $('.content').toggle(effect, options, duration);
+});
+
+$(".content").click(function () {
+    var duration = 0;
+    $('.content').toggle(duration);
+    $('.initial').show();
+});
+
+
+
 
 // signals that this is script for Desktop media size
 	console.log("DESKTOP");
