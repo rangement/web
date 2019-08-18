@@ -148,7 +148,7 @@
 
 	.item .itemNumber {
 		display: block;
-		min-width: 5.5em;
+		min-width: 5.85em;
 		padding-left: 0.35em;
 		font-family: Times,sans-serif;
 		font-size: calc(29.5px + 0.2vw);
