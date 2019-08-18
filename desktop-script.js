@@ -18,7 +18,7 @@ if (screen.width >= 450) {
 		$('.item-image'+ show).css('display','flex');
 		timeset = setTimeout(function(){ 
 			$('.item-image').css('display','none'); 
-		}, 2000);
+		}, 4000);
 
 	});
 
