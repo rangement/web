@@ -24,41 +24,6 @@ if (screen.width >= 450) {
 
 
 
-
-		$( window ).mousemove(function( event ) {
-		window.clearTimeout(timeset);
-		$('.item').mouseenter(function(){
-			show = $(this).attr('alt').replace(/\D/g,''); 
-			// /\D/g = global search for non-digit characters
-		});
-		
-		var showDiv = 'item-image'+ show;
-
-		$('.item-image').css('display','none');
-		$('.item-image'+ show).css('display','flex');
-		timeset = setTimeout(function(){ 
-			$('.item-image').css('display','none'); 
-		}, 2000);
-
-	});
-
-
-
-//close section-2 when scroll back to top:
-
-	window.onscroll = function(e) {	
-		var bod = document.body; 
-    	var doc = document.documentElement; 
-    	doc = (doc.clientHeight)? doc : bod;
-	
-		if (doc.scrollTop == 0){
-			if ($('#section-2').hasClass('active')){
-		 		$('#section-2').removeClass('active');
-			}  
-		};      
-	};
-
-
 // signals that this is script for Desktop media size
 	console.log("DESKTOP");
 
