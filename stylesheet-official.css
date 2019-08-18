@@ -67,6 +67,14 @@
 		text-transform: capitalize;
 	}
 
+	header #lang-2 {
+		right:1.5em;
+		float: right;
+		position: absolute;
+		display: none;
+		text-transform: capitalize;
+	}
+
 	header #about {
 		position: sticky;
 		top:0px;
@@ -98,16 +106,26 @@
   	width: 100%;
   	height: auto; }
 
-
-  	#section-1{
-/*  	height: 99vh;*/
-  	}
-
   	#section-2{
-  	height: 99vh;
-  	display: none;
+  	visibility: none;
   	}
 
+  	#section-2.active{
+    visibility: visible;
+  	height: 99vh;
+  	}
+
+  	#section-2.active #itemGallery{
+	height: 700px;
+	width:700px;
+	align-items: center;
+	background-color: blue;
+  	}
+
+  	#section-2.active #itemGallery img{
+	height: 500px;
+	width: auto;
+  	}
 
 /*	body, p {
   	font-size: calc(18.5px + 0.2vw); 
@@ -183,6 +201,10 @@
 		background: white;
 		margin-top: calc(4.25em + 0.2vw);
 		margin-bottom: calc(0.75em + 0.2vw);
+	}
+
+	.carousel{
+		display: none;
 	}
 
 
