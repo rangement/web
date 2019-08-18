@@ -197,14 +197,10 @@
 		width: auto;
 	}
 	
-	.container-fluid {
+	.container{
 		background: white;
 		margin-top: calc(4.25em + 0.2vw);
 		margin-bottom: calc(0.75em + 0.2vw);
-	}
-
-	.carousel{
-		display: none;
 	}
 
 
