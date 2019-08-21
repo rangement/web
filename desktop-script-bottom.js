@@ -1,12 +1,6 @@
 // SCRIPTS PLACED AT BOTTOM OF HTML INSIDE BODY. 
 
 
-
-if (screen.width >= 471) {  // MEDIA SIZE DESKTOP
-
-
-
-
   // Dates the page upon load (displayed in 'footer #para1'):
   document.getElementById("para1").innerHTML = formatAMPM();
 
@@ -78,6 +72,7 @@ if (screen.width >= 471) {  // MEDIA SIZE DESKTOP
     $("#name .about").click(function(){
       $("#about").slideToggle();
       $("#about").css('display','block');
+      $("#name .about" ).toggleClass('active')
     });
   });
  
@@ -86,20 +81,16 @@ if (screen.width >= 471) {  // MEDIA SIZE DESKTOP
 
 
 
-  // Signals that this is script for Desktop media size:
-  console.log("DESKTOP");
-
-}
 
 
 
 
 
-//MOBILE SCRIPT ____________________________________________________________
+//MOBILE SCRIPT ONLY ____________________________________________________________
 
 
 
-else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
+if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
 
     $(window).load(function() {

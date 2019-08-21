@@ -82,6 +82,11 @@
 		top:0px;
 		display: inline-block;
 	}*/
+	
+	.about.active{
+		opacity: 0;
+	}
+
 
 	#about {
 		display: none;
@@ -92,15 +97,15 @@
 		top: 0px;
 		left: 0px;
 		z-index: 99999;
-		padding-top: calc(0.5em + 0.2vw);
-
+		padding-top: calc(0.25em + 0.2vw);
+		padding-right: calc(9em + 0.2vw);
 	}
 
-#about a{
-	font-family: Times,sans-serif;
-	font-size: calc(33.5px + 0.2vw);
-	line-height: 30px;
-}
+	#about a{
+		font-family: Times,sans-serif;
+		font-size: calc(33.5px + 0.2vw);
+		line-height: 43px;
+	}
 
 
 	footer{
@@ -269,7 +274,7 @@
   		color: #008000;
 		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 		text-decoration: none;
-		font-size: calc(16pt + 0.2vw);
+		font-size: calc(19pt + 0.2vw);
 	}
 
 	.itemNumber {

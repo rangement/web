@@ -2,7 +2,7 @@
 
 
 
-if (screen.width >= 450) {  // MEDIA SIZE DESKTOP
+if (screen.width >= 471) {  // MEDIA SIZE DESKTOP
 
 
 
@@ -31,24 +31,6 @@ if (screen.width >= 450) {  // MEDIA SIZE DESKTOP
 	});
 
 
-// SLIDE TOGGLE
-
-$(".initial").click(function () {
-    var effect = 'slide';
-    var options = { direction: $('.more').val() };
-    var duration = 100;
-    $('.initial').hide();
-    $('.content').toggle(effect, options, duration);
-});
-
-$(".content").click(function () {
-    var duration = 0;
-    $('.content').toggle(duration);
-    $('.initial').show();
-});
-
-
-
 
 
 
@@ -66,14 +48,25 @@ $(".content").click(function () {
 
 
 
-else {   // MEDIA SIZE MOBILE
+else if (screen.width <= 470){   // MEDIA SIZE MOBILE
 
   
   	// Check that any code here actually works:
 	$(window).load(function() {
 		$('html a,.container a,header a,footer a,main a').css('color','red');
-		$('.cls-1').css('fill','red');	
+		$('.cls-1').css('fill','red');		
 	});
+
+
+
+
+
+
+
+
+
+
+
 
 	console.log("MOBILE");
 
