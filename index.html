@@ -5,8 +5,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/greencircle.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet-official.css">
-	<script src="desktop-script.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="stylesheet.css">
+	<script src="desktop-script-top.js"></script>
 
 	</head>
 
@@ -23,7 +24,11 @@
 
 
 			
-			<div id="name"><a href="https://"> Theia Flynn / </a><a href="https://"> About / </a><a> ...</a></div>
+			<div id="name"><a> Theia Flynn / </a><a class="about"> About / </a><a> ...</a></div>
+
+			<div id="about">
+				<a>Theia is a recent graduate.</a>
+			</div>
 
 			</header>
 
@@ -40,14 +45,15 @@
 					<div class="itemTitle">/ Web tag glossary</div>
 				</a>
 				<div class="item-image item-image1">
-					<img src="assets/img/file-01.png">
+					<img src="assets/img/file-01.png" id="slide" onclick="nextslide()">
+					<img src="assets/img/file-02.png" id="slide2">
 				</div>
 
 
 				<a class="item item2" alt="item2">
 					<div class="itemNumber">2</div> 
 					<div class="itemDate">/ Nov 2018</div>
-					<div class="itemTitle">/ Book about Reading</div>
+					<div class="itemTitle">/ Reading Reading</div>
 				</a>
 				<div class="item-image item-image2">
 					<img src="assets/img/file-02.png">
@@ -117,7 +123,7 @@
 				<a class="item item9" alt="item9"">
 					<div class="itemNumber">9</div> 
 					<div class="itemDate">/ Oct 2018</div>
-					<div class="itemTitle">/ Voyager Package </div>
+					<div class="itemTitle">/ Voyager Package</div>
 				</a>
 				<div class="item-image item-image9">
 					<img src="assets/img/file-09.gif">
@@ -127,7 +133,7 @@
 				<a class="item item10" alt="item10"">
 					<div class="itemNumber">10</div> 
 					<div class="itemDate">/ March 2019</div>
-					<div class="itemTitle">/ Flashbacks Book</div>
+					<div class="itemTitle">/ Flashbacks</div>
 				</a>
 				<div class="item-image item-image10">
 					<img src="assets/img/file-010.png">
@@ -137,7 +143,7 @@
 				<a class="item item25" alt="item25"">
 					<div class="itemNumber">11</div> 
 					<div class="itemDate">/ March 2018</div>
-					<div class="itemTitle">/ Argentina "High-Low" WS Travel Course Catalog</div>
+					<div class="itemTitle">/ Argentina &ldquo;High-Low&rdquo; WS Travel Course Catalog</div>
 				</a>
 				<div class="item-image item-image25">
 					<img src="assets/img/file-00.png">
@@ -157,7 +163,7 @@
 				<a class="item item13" alt="item13"">
 					<div class="itemNumber">13</div> 
 					<div class="itemDate">/ Dec 2018</div>
-					<div class="itemTitle">/ Serif Typeface "Incline" </div>
+					<div class="itemTitle">/ Serif Typeface &ldquo;Incline&rdquo; </div>
 				</a>
 				<div class="item-image item-image13">
 					<img src="assets/img/file-013.png">
@@ -167,7 +173,7 @@
 				<a class="item item14" alt="item14"">
 					<div class="itemNumber">14</div> 
 					<div class="itemDate">/ May 2019</div>
-					<div class="itemTitle">/ Degree Project, Manifesto</div>
+					<div class="itemTitle">/ Degree Project; Manifesto</div>
 				</a>
 				<div class="item-image item-image14">
 					<img src="assets/img/file-014.png">
@@ -187,7 +193,7 @@
 				<a class="item item16" alt="item16"">
 					<div class="itemNumber">16</div> 
 					<div class="itemDate">/ May 2019</div>
-					<div class="itemTitle">/ "Endless Scroll" GD Senior Show 2019 Website</div>
+					<div class="itemTitle">/ &ldquo;Endless Scroll&rdquo; GD Senior Show 2019 Website</div>
 				</a>
 				<div class="item-image item-image16">
 					<img src="assets/img/file-05.png">
@@ -207,7 +213,7 @@
 				<a class="item item18" alt="item18"">
 					<div class="itemNumber">18</div> 
 					<div class="itemDate">/ May 2019</div>
-					<div class="itemTitle">/ Promotional Posters/Cards for Wen's Photo Show</div>
+					<div class="itemTitle">/ Promotional Posters/Cards for Wen&rsquo;s Photo Show</div>
 				</a>
 				<div class="item-image item-image18">
 					<img src="assets/img/file-018.png">
@@ -217,7 +223,7 @@
 				<a class="item item19" alt="item19"">
 					<div class="itemNumber">19</div> 
 					<div class="itemDate">/ May 2019</div>
-					<div class="itemTitle">/ Sans-Serif Typeface "Rhyta"</div>
+					<div class="itemTitle">/ Sans-Serif Typeface &ldquo;Rhyta&rdquo;</div>
 				</a>
 				<div class="item-image item-image19">
 					<img src="assets/img/file-019.png">
@@ -268,107 +274,65 @@
 		</section>
 
 		<section id="section-2">
-				<div class="itemGallery">
+				<div id="itemGallery">
+
+					<div class="item-carousel item-carousel1">
+					<img src="assets/img/file-01.png">
+					</div>
+
+
 				</div>	
 		</section>
 
 
 	  <footer>
-	  	<div id="contact"><a>Contact </a></div>
+	  	<div id="contact" href = "mailto: theia.flynn@gmail.com"><a>Contact </a></div>
 	  	<div><a id="para1"></a></div>
 	  </footer>
 
 	</main>
 
+
 <script type="text/javascript">
+// MEDIA DESKTOP ______________________________________________
 
-  	document.getElementById("para1").innerHTML = formatAMPM();
-
-  	function formatAMPM() {
-    let d = new Date(),
-      // minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-      // hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-      // ampm = d.getHours() >= 12 ? 'pm' : 'am',
-      months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
-      days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
-      at = "at";
-      return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear();
-  	}
-
-  	// +', '+hours+':'+minutes+ampm
+if (screen.width >= 470) {   // MEDIA SIZE DESKTOP
 
 
-//opens up section-2 on item click:
 
+	//opens up section-2 on item click:
 	$(function () {
 	  $('.item').click(function () {
         $('#section-2').toggleClass('active');
         $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-        return true;
+        $('.item-carousel').toggleClass('active');
       })
     })
 
 
-// When the user scrolls down 100px from the top of the document, show the button
+  // Signals that this is script for DESKTOP media size:
+  console.log("DESKTOP");
 
-	function scrollFunction() {
-  		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
-    		document.getElementById("lang-2").style.display = "inline";
-    		document.getElementById("lang").style.display = "none";
-  		} else {
-    		document.getElementById("lang").style.display = "inline";
-    		document.getElementById("lang-2").style.display = "none";
-  		}
-	}
-
-//close section-2 when scroll back to top:
-
-	function closeSection2(){
-		var bod = document.body; 
-    	var doc = document.documentElement; 
-    	doc = (doc.clientHeight)? doc : bod;
-	
-		if (doc.scrollTop == 0){
-			if ($('#section-2').hasClass('active')){
-		 		$('#section-2').removeClass('active');
-			}  
-		};      
-	};
-
-//launch both functions:
-window.onscroll = function() {scrollFunction();closeSection2()};
+}
 
 
-// When the user clicks on the button, scroll to the top of the document
-	// function topFunction() {
- //  		document.body.scrollTop = 0;
- //  		document.documentElement.scrollTop = 0;
-	// }	
+// MEDIA SCREEN MOBILE ______________________________________________
 
 
-//scroll to bottom onclick of "Bottom"
-//scroll to top onclick of "Top"
 
-	$(function () {
-	  $('#lang').click(function () {
-  		$("html, body").animate({ scrollTop: $(document).height() }, 1000);
-  		$("#lang-2").css('display','inline');
-  		$("#lang").css('display','none');
-  	  })
-	})
+else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
-	$(function () {
-	  $('#lang-2').click(function () {
-	  	$("html, body").animate({scrollTop: 0}, 500);
-  		$("#lang").css('display','inline');
-  		$("#lang-2").css('display','none');
-  	  })
-	})
+  // !Section-2 does NOT open upon item click!
+  
+  // Signals that this is script for Mobile media size:
+  console.log("MOBILE");
 
-
+}
 
 
 </script>
+
+<script src="desktop-script-bottom.js"></script>
 
 
 </body>

@@ -1,6 +1,11 @@
-//DESKTOP SCRIPT
+// SCRIPTS PLACED AND LOADED AT TOP OF HTML INSIDE BODY. 
 
-if (screen.width >= 450) {
+
+
+if (screen.width >= 450) {  // MEDIA SIZE DESKTOP
+
+
+
 
 	var show = 0;
 	var timeset;
@@ -53,13 +58,22 @@ $(".content").click(function () {
 
 }
 
+
+
+
+
 //MOBILE SCRIPT ____________________________________________________________
 
-else {
 
-	// $(window).load(function() {
-	// 	$('html,.container-fluid,header,footer,main').css('background-color','lightgrey');	
-	// });
+
+else {   // MEDIA SIZE MOBILE
+
+  
+  	// Check that any code here actually works:
+	$(window).load(function() {
+		$('html a,.container a,header a,footer a,main a').css('color','red');
+		$('.cls-1').css('fill','red');	
+	});
 
 	console.log("MOBILE");
 
