@@ -27,6 +27,7 @@
   	cursor: url("assets/whitecircle.png"), auto;
   	}*/
 
+
 	html {
   		margin: 0;
   		background-color: white;
@@ -82,7 +83,7 @@
 		top:0px;
 		display: inline-block;
 	}*/
-	
+
 	.about.active{
 		opacity: 0;
 	}
@@ -167,6 +168,10 @@
 		background: white;
 		min-height: 100vh;
 	}	
+
+	body{
+		margin-left: 0;
+	}
 
 	.item {
 		display: flex;
@@ -277,20 +282,57 @@
 		font-size: calc(19pt + 0.2vw);
 	}
 
-	.itemNumber {
-		display: block;
-		min-width: 0px;
-		padding: 0px;
-		font-family: Times,sans-serif;
-		font-size: calc(19.5pt + 0.2vw);
+	header{
+		width: 100%;
+		left: 0px;
+		padding-bottom: calc(0.25em + 0.2vw);
 	}
 	
+
+	.container{
+		background: white;
+		margin-top: calc(5.75em + 0.2vw);
+		margin-bottom: calc(0.85em + 0.2vw);
+	}
+
+
+	#about {
+		display: none;
+		background-color: white;
+		height: 100vh;
+		width: 99vw;
+		margin: 0;
+		top: 0px;
+		left: 0px;
+		z-index: 9999;
+		padding-top: calc(0.25em + 0.2vw);
+		padding-right: calc(9em + 0.2vw);
+	}
+
+	#about a{
+		font-family: Times,sans-serif;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 30px;
+	}
+
+
+	.item{
+		display: flex;
+		padding-bottom: calc(0.25em + 0.2vw);
+		padding-left: calc(0.25em + 0.2vw);
+	}
+
+
+	.item .itemNumber {
+		display: none;
+	}
+
 	.item .itemDate {
 		display: block;
-		min-width: 25px;
+		min-width: calc(5.5em + 0.2vw);
 		font-family: Times,sans-serif;
-		font-size: calc(19.5pt + 0.2vw);
-		line-height: 30px;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 23px;
 
 	}
 
@@ -299,7 +341,9 @@
 		min-width: 5em;
 		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 		font-size: calc(16pt + 0.2vw);
+		line-height: 29px;
 	}
+
 
 
 	.item-image {
@@ -309,14 +353,79 @@
 		padding-bottom: 2em;
 		align-items: center;
 		justify-content: center;
-		display: block;
+		display: block !important;
 		/*background-color: blue;*/
 	}
 
 	.item-image img{
 		width: 100%;
+		z-index: -1;
 	}
 
+
+	header #lang, header #lang-2 {
+		padding-top: calc(0.15em + 0.2vw);
+		right: calc(0.75em + 0.2vw);
+	}
+
+
+	#lang #arrow, #lang-2 #arrow{
+		height:21pt;
+		width:21pt;
+	}
+
+	header .about{
+		display: block;
+	}
+
+	.about.active{
+		opacity: 100;
+	}
+
+	footer{
+		padding-bottom: calc(2em + 0.2vw);	
+	}
+
+
+}
+
+
+
+/* Mobile size TINY 320: ___________________________________________*/
+
+
+@media screen and (max-width: 320px) {
+
+
+	html a {
+  		color: #008000;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		text-decoration: none;
+		font-size: calc(19pt + 0.2vw);
+	}
+#about a{
+		font-family: Times,sans-serif;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 23px;
+	}
+.item .itemDate {
+		display: block;
+		min-width: 25px;
+		font-family: Times,sans-serif;
+		font-size: calc(17pt + 0.2vw);
+		line-height: 25px;
+
+	}
+.itemTitle {
+		display: block;
+		min-width: 5em;
+		font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		font-size: calc(16pt + 0.2vw);
+	}
+#lang #arrow, #lang-2 #arrow{
+		height:21pt;
+		width:21pt;
+	}
 
 }
 

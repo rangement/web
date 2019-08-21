@@ -24,7 +24,7 @@
 
 
 			
-			<div id="name"><a> Theia Flynn </a><a class="about">/ About / ...</a></div>
+			<div class="name"><a> Theia Flynn </a><a class="about">/ About / ...</a></div>
 
 			<div id="about">
 				<a>is a recent graduate from the Rhode Island School of Design (GD&lsquo;19). Originally from Geneva, Switzerland. Enjoys: collecting pictures <a href="https://www.are.na/theia-flynn/greetings-ykpl2ygiucq"><u>online</u></a><a>. Accumulating books for their covers, their content or just on impulse. Writing amateurishly but happily. The web as a platform for independent experiments. Email:</a><a><u>theia.flynn@gmail.com</u>.</a>
@@ -37,7 +37,7 @@
 	<main>
 
 		<div class="container">
-		<div class="row">
+		
 
 				<a class="item item1" alt="item1">
 					<div class="itemNumber">1</div> 
@@ -269,7 +269,7 @@
 					<img src="assets/img/file-023.png">
 				</div>	
 													
-		</div>
+		
 		</div>
 		</section>
 
@@ -323,6 +323,10 @@ if (screen.width >= 470) {   // MEDIA SIZE DESKTOP
 else if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
   // !Section-2 does NOT open upon item click!
+  $('header .about').replaceWith("<a class='about'>About <a>");
+  $('.item-image').css({"display":"block","z-index":"0"}); 
+  $('header, container a').css('z-index','100'); 
+  // $( '.item-image' ).after($( ".item"+ '+d.getDate()+' ));
 
   // Signals that this is script for Mobile media size:
   console.log("MOBILE");

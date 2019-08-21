@@ -29,6 +29,11 @@
       }
   }
 
+
+
+if (screen.width >= 470) {   // MEDIA SIZE MOBILE
+
+
   // Close section-2 when scroll back to top:
   function closeSection2(){
     var bod = document.body; 
@@ -42,10 +47,15 @@
         $('.item-carousel').removeClass('active');
       }  
     };      
-  };
+  }
 
-  // Launch both functions:
+// Launch both functions:
   window.onscroll = function() {scrollFunction();closeSection2()};
+
+}
+
+
+  
 
 
   // Scroll to bottom onclick of "Bottom":
@@ -95,7 +105,13 @@ if (screen.width <= 470) {   // MEDIA SIZE MOBILE
 
     $(window).load(function() {
     $('footer #para1').css('display','none'); 
+    $('.item-image').css('display','block');
     });
+
+    window.onscroll = function() {scrollFunction()};
+
+    
+ 
 
 
   // Signals that this is script for Mobile media size:
