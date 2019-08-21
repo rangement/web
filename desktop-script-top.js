@@ -54,14 +54,9 @@ else if (screen.width <= 470){   // MEDIA SIZE MOBILE
   	// Check that any code here actually works:
 	$(window).load(function() {
 		$('html a,.container a,header a,footer a,main a').css('color','red');
-		$('.cls-1').css('fill','red');		
+		$('.cls-1').css('fill','red');	
+		$('.item-image').css('display','block'); 	
 	});
-
-
-
-
-
-
 
 
 
