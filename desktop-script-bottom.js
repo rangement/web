@@ -79,10 +79,11 @@ if (screen.width >= 470) {   // MEDIA SIZE MOBILE
 
   // Slidetoggle About menu:
   $(document).ready(function(){
-    $("#name .about").click(function(){
+    $(".about").click(function(){
       $("#about").slideToggle();
       $("#about").css('display','block');
-      $("#name .about" ).toggleClass('active')
+      $(".item-image" ).css('display','none');
+      $("#exit" ).css('opacity','100');
     });
   });
  
